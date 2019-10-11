@@ -48,6 +48,6 @@ module.exports.calculateScore = function (player) {
     case 'TE':
       return calculateReceivingScore(player)
     default:
-      return 0
+      throw new Error("Unknown player position (K)")
   }
 }
