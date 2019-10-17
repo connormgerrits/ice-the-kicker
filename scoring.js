@@ -34,7 +34,7 @@ function calculateReturnScore(player) {
 
   return kickYards + kickTouchdowns + kickFumbles + puntYards + puntTouchdowns + puntFumbles
 }
-// hello
+// hello 2
 module.exports.calculateScore = function (player) {
   switch (player.position) {
     case 'QB':
