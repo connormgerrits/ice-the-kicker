@@ -34,7 +34,7 @@ function calculateReturnScore(player) {
 
   return kickYards + kickTouchdowns + kickFumbles + puntYards + puntTouchdowns + puntFumbles
 }
-
+// hello 2
 module.exports.calculateScore = function (player) {
   switch (player.position) {
     case 'QB':
@@ -48,6 +48,6 @@ module.exports.calculateScore = function (player) {
     case 'TE':
       return calculateReceivingScore(player)
     default:
-      return 0
+      throw new Error("Unknown player position (K)")
   }
 }
